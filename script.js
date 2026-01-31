@@ -11,14 +11,14 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCIfqgfkcsL4mJZVrGEfpWZfrdA-tuHECc",
-    authDomain: "prepaid-energy-meter-766f1.firebaseapp.com",
-    databaseURL: "https://prepaid-energy-meter-766f1-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "prepaid-energy-meter-766f1",
-    storageBucket: "prepaid-energy-meter-766f1.firebasestorage.app",
-    messagingSenderId: "829090401638",
-    appId: "1:829090401638:web:636bab9c5047837f48cca7",
-    measurementId: "G-6ZM817EVFN"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
